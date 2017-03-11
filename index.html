@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Donald Duck Resume">
+    <title>Sally Duck Resume</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<!--
+article looks like overkill. Could be useful is add non-related content to the page.
+
+how to use microdata.
+how to use roles.
+
+test tele from phone and browser - ok
+
+to test microdata:
+https://search.google.com/structured-data/testing-tool/u/0/
+
+-->
+
+<body>
+    <header role="presentation">
+<!--
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="logo">
+        </div>
+        <nav role="navigation"></nav>
+-->
+    </header>
+    <main role="main">
+        <article role="contentinfo" itemscope itemtype="http://schema.org/Person">
+            <section id="contact-info">
+                <header>
+                    <h1>Contact Information</h1>
+                </header>
+                <h2 itemprop="name">Sally Duck</h2>
+                <figure>
+                    <img role="presentation" itemprop="image" height="250px" alt="Sally Duck"
+                    src="http://images.clipartpanda.com/donald-duck-clip-art-thumbs_donald-duck-vectors11.jpg">
+                    <figcaption>Sally at Duck Theatre</figcaption>
+                </figure>
+                <address itemprop="address">
+                    Website:
+                    <a itemprop="url" href="www.sally-duck.com">
+                        www.sally-duck.com
+                    </a>
+                    <br/>
+                    Email:
+                    <a itemprop="email" href="mailto:jv2351mf@gmail.com?Subject=Please contact me" target="_blank">
+                        jv2351mf@gmail.com
+                    </a>
+                    <br/>
+                    Telephone:
+                    <a itemprop="telephone" href="tel:+12016394170">
+                        201-639-4170
+                    </a>
+                </address>
+            </section>
+            <section id="education">
+                <hgroup>
+                    <h1>Education</h1>
+                    <h2 itemprop="alumniOf">
+                        <a itemprop="url" href="www.cartoon-college.com">
+                            Cartoon College
+                        </a>
+                    </h2>
+                </hgroup>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, adipisci modi voluptas, labore praesentium quis autem deserunt, alias architecto est ad magni debitis voluptatibus! Enim.
+                </p>
+            </section>
+            <section id="employment">
+                <h1>Employment</h1>
+                <hgroup>
+                    <h2 itemprop="worksFor">
+                        <a itemprop="url" href="www.united-ducks.com">
+                            United Ducks
+                        </a>
+                    </h2>
+                    <h3 itemprop="jobTitle">Chief Duck</h3>
+                </hgroup>
+                <p>April 2001 to the present</p>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem recusandae in esse praesentium. Earum velit dicta architecto aperiam at pariatur, excepturi, nisi est perspiciatis nobis, similique alias aliquid, quis sit?
+                </p>
+                <hgroup>
+                    <h2 itemprop="worksFor">
+                        <a itemprop="url" href="www.c21-duck.com">
+                            21st Century Duck
+                        </a>
+                    </h2>
+                    <h3 itemprop="jobTitle">Senior Duck</h3>
+                </hgroup>
+                <p>Jan 1998 - April 2001</p>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit adipisci modi ratione deserunt, necessitatibus numquam a nostrum assumenda non quasi sit esse incidunt itaque placeat facilis!
+                </p>
+            </section>
+
+            <section id="volunteer">
+                <h1>Sally Volunteering</h1>
+                <p>
+                   Sally is a founder member of the
+                    <a itemprop="memberOf" href="www.sally-duck-foundation.net">
+                        Sally Duck Foundation
+                    </a>
+                    offering children's entertainment in hospitals and schools. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi reprehenderit, quae qui.
+                </p>
+                <address itemprop="address">
+                    For more information, please
+                    email:
+                    <a itemprop="email" href="mailto:sally-duck@gmail.com?Subject=Sally Duck Foundation" target="_blank">
+                        sally-duck@gmail.com
+                    </a>
+                </address>
+                <figure aria-labelledby="duck-trio" role="group">
+                    <img height="250px" src="http://www.hdwallpapersfreedownload.com/uploads/large/cartoons/mickey-mouse-donald-duck-hd-wall-paper.jpg" alt="Sally and Friends Singing Trio">
+                    <figcaption id="duck-trio">
+                        Sally and Friends Singing Trio singing <cite>Duck Soup</cite>
+                    </figcaption>
+                </figure>
+            </section>
+        </article>
+
+    </main>
+
+    <footer role="presentation">
+        <div class="container">
+            <p>Copyright &copy; Sally Duck 2016</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
